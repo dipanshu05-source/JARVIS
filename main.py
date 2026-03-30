@@ -21,7 +21,7 @@ def speakg(text):
     pygame.mixer.music.unload()
     os.remove('temp.mp3')    
 
-newsapi="ab25fe10644f4d6c93720a8302030a2e"
+newsapi="ab2xxxxxxxxxxxxxxxxxxx"
 
 def speakq(text):
     os.system(f'espeak "{text}"')
@@ -34,7 +34,7 @@ speakq("Hello Dipanshu")
 def aiprocess(command):
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="sk-or-v1-03dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     )
 
     completion = client.chat.completions.create(
@@ -87,7 +87,7 @@ def processcommand(c):
         link=musiclib.music[song]
         webbrowser.open(link)  
     elif "news" in c.lower():
-        r=requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey=ab25fe10644f4d6c93720a8302030a2e") 
+        r=requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey=ab25fe106xxxxxxxxxxxxxxxxxx") 
        
         if r.status_code==200:
             data=r.json()
